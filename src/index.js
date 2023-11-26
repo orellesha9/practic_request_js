@@ -1,9 +1,9 @@
-import "./styles/normalize.css";
-import "./styles/index.css";
-import { renderAllProducts } from "./js/renderAllProducts";
-import { refs } from "./refs";
-import { handleForm } from "./js/handleForm";
+import './styles/normalize.css';
+import './styles/index.css';
+import { refs } from './refs';
+import { handleForm } from './js/handleForm';
+import { addNewProduct } from './js/addNewProduct';
+// renderAllProducts();
 
-renderAllProducts();
-
-refs.singleProductForm.addEventListener("submit", handleForm);
+refs.singleProductForm.addEventListener('submit', handleForm);
+refs.addProductForm.addEventListener('submit', addNewProduct);
